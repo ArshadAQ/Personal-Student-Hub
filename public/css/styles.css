@@ -1,0 +1,454 @@
+/**
+ * styles.css
+ *
+ * Computer Science 50
+ * Problem Set 7
+ *
+ * Global CSS.
+ */
+
+.container
+{
+    /* center contents */
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+}
+
+#top
+{
+    /* surround with whitespace */
+    margin-bottom: 15px;
+    margin-top: 15px;
+    margin-left:-100px;
+    margin-right:-100px;
+}
+
+#top .nav
+{
+    /* center navigation pills */
+    display: inline-block;
+}
+
+#middle
+{
+    margin-left:-100px;
+    margin-right:-100px;
+}
+
+#middle .form-control
+{
+    /* center form controls */
+    display: inline-block;
+
+    /* override Bootstrap's 100% width for form controls */
+    width: auto;
+}
+
+#bottom
+{
+    /* shrink bottom's font size */
+    font-size: smaller;
+
+    /* surround with whitespace */
+    margin: 20px;
+}
+
+.btn-custom
+{
+
+    border-width: 0px;
+    background-color: transparent;
+}
+
+.btn-custom:active
+{
+    border-color:#337AB7;
+}
+
+.btn-custom:focus
+{
+    border-color:#337AB7;
+}
+
+.nav-custom > li > a
+{
+    padding-top: 5px;
+    padding-bottom: 5px;
+    border-color: #FFFFFF;
+    color: #337AB7;
+}
+
+.color
+{
+    color:#337AB7;
+}
+
+.glyphicon-cog
+{
+  bottom: 3px;
+}
+.navbar-nav
+{
+    text-align:center;
+}
+
+
+
+
+
+#abc {
+width:100%;
+height:100%;
+opacity:.95;
+top:0;
+left:0;
+display:none;
+position:fixed;
+background-color:#313131;
+overflow:auto
+}
+#abc_1, #abc_2, #abc_2_1, #abc_3, #abc_4 {
+width:100%;
+height:100%;
+opacity:.95;
+top:0;
+left:0;
+display:none;
+position:fixed;
+background-color:#313131;
+overflow:hidden
+}
+#close, #close_1, #close_1_1, #close_2_1, #close_2, #close_3 {
+position:absolute;
+right:-14px;
+top:-14px;
+cursor:pointer
+}
+#popupContact {
+position:absolute;
+left:50%;
+top:17%;
+margin-left:-202px;
+font-family:'Raleway',sans-serif
+}
+#popupContact_1, #popupContact_2, #popupContact_2_1, #popupContact_3, #popupContact_4 {
+position:absolute;
+left:50%;
+top:17%;
+margin-left:-202px
+}
+#form {
+max-width:400px;
+min-width:250px;
+height:500px;
+padding:10px 50px;
+border:2px solid gray;
+border-radius:10px;
+font-family:raleway;
+background-color:#fff
+}
+#form_1, #form_2, #form_2_1, #form_3_1, #form_3, #form_4 {
+width:400px;
+/*height:300px;*/
+padding:0px 0px;
+border:2px solid #337ab7;
+border-radius:10px;
+background-color:#fff
+}
+p {
+margin-top:30px
+}
+#form.h2 {
+background-color:#FEFFED;
+padding:20px 35px;
+margin:-10px -50px;
+text-align:center;
+border-radius:10px 10px 0 0
+}
+hr {
+margin:10px -50px;
+border:0;
+border-top:1px solid #ccc
+}
+#name,#mobileno,#phoneno,#emailid,#address_contact{
+width:100%;
+height:40px;
+padding:10px;
+margin-top:15px;
+border:1px solid #ccc;
+padding-left:40px;
+font-size:16px;
+font-family:sans-serif;
+
+}
+#name {
+background-image:url(../images/glyphicons-4-user.png);
+background-repeat:no-repeat;
+background-position:5px 7px
+}
+#mobileno {
+background-image:url(../images/glyphicons-443-earphone.png);
+background-repeat:no-repeat;
+background-position:5px 7px
+}
+#phoneno {
+background-image:url(../images/glyphicons-442-phone-alt.png);
+background-repeat:no-repeat;
+background-position:5px 7px
+}
+#emailid {
+background-image:url(../images/glyphicons-11-envelope.png);
+background-repeat:no-repeat;
+background-position:5px 7px
+}
+
+
+#address_contact {
+background-image:url(../images/glyphicons-243-map-marker.png);
+background-repeat:no-repeat;
+background-position:5px 7px;
+margin-bottom:30px;
+resize:none;
+width:295px;
+}
+
+#submit {
+text-decoration:none;
+width:100%;
+text-align:center;
+display:block;
+background-color:#FFBC00;
+color:#fff;
+border:1px solid #FFCB00;
+padding:10px 0;
+font-size:20px;
+cursor:pointer;
+border-radius:5px
+}
+
+.panel-heading div {
+			margin-top: -18px;
+			font-size: 15px;
+		}
+
+.panel-heading div span{
+			margin-left:5px;
+		}
+
+
+/**
+ * styles.css
+ *
+ * Computer Science 50
+ * Problem Set 8
+ *
+ * Global CSS.
+ */
+
+
+#map-canvas
+{
+    /* height of these elements
+    height:300px;
+    width:300px;*/
+
+    height:500px;
+    /*float:right;*/
+    width:100%;
+
+    /* no margin around these elements */
+    margin: 0;
+
+    border:10px bold;
+    border-color: black;
+
+    /* disable scrollbars */
+    overflow: hidden;
+
+    /* no padding within these elements */
+    padding: 0;
+}
+
+/* stylize places' labels */
+.label
+{
+    /* small, black text */
+    color: #000000;
+    font-family: sans-serif;
+    font-size: small;
+    font-weight: bold;
+
+    /* don't let places' labels wrap onto multiple lines */
+    white-space: nowrap;
+}
+
+/* stylize info window */
+#info
+{
+    /* no margin around this element */
+    margin: 0;
+
+    /* should be at least this width */
+    min-width: 200px;
+
+    max-width: 600px;
+
+    /* allow scrollbars as needed */
+    overflow: auto;
+
+    white-space: nowrap;
+
+    border-width:0;
+
+}
+#info ul
+{
+    margin-bottom: 0;
+}
+
+/* stylize typeahead.js a la http://twitter.github.io/typeahead.js/css/examples.css */
+.tt-dropdown-menu
+{
+    background-color: #fff;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    margin-top: 1px;
+    max-height: 150px;
+    overflow-y: auto;
+    padding: 6px 12px;
+    width: 300px;
+}
+.tt-suggestion.tt-cursor {
+    background-color: #0097cf;
+    color: #fff;
+    cursor: pointer;
+}
+.tt-suggestion p {
+    margin: 0;
+}
+
+.head
+{
+    text-align: center;
+    font-weight: bold;
+    font-size: medium;
+    text-decoration: underline;
+    top:0;
+    bottom:0;
+    margin:auto;
+}
+
+#legend
+{
+    font-family: sans-serif;
+    background: slategray;
+    color:#fff;
+    padding: 10px;
+    margin: 1px;
+    /*border: 2px solid #000;*/
+    border-radius:10px;
+    width: 300px;
+    height: 120px;
+}
+
+#legend li
+{
+    padding-left: 2em;
+    text-indent: -2em;
+    float:left;
+    /*margin-left:3em;*/
+}
+
+#right-panel {
+        font-family: 'Roboto','sans-serif';
+        line-height: 30px;
+        padding-left: 10px;
+      }
+
+      #right-panel select, #right-panel input {
+        font-size: 15px;
+      }
+
+      #right-panel select {
+        width: 100%;
+      }
+
+      #right-panel i {
+        font-size: 12px;
+      }
+      #right-panel {
+        height: 500px;
+        float: right;
+        overflow: auto;
+      }
+@media print {
+        #right-panel {
+          float: none;
+          width: auto;
+        }
+      }
+
+/*courses*/
+.repository-content{
+    width: 75%;
+    margin-left: 160px;
+}
+table.files td.icon {
+    width: 17px;
+    padding-right: 2px;
+    padding-left: 10px;
+    color: rgba(3,47,98,0.55);
+}
+
+/*selectize controls*/
+.selectize-control.contacts .selectize-input [data-value] .email:before {
+	content: ' <';
+}
+.selectize-control.contacts .selectize-input [data-value] .email:after {
+	content: '>';
+}
+
+.js-navigation-open{
+ cursor:pointer;
+}
+
+/*.element .element-header input {
+    background: #fff url(img/glass.png) no-repeat 6px center;
+    border: 0;
+    border-bottom: 1px solid #37598a;
+    border-radius: 80px;
+    float: right;
+
+    margin: 0;
+    width: 0;
+    padding: 0 11px;
+    height: 22px;
+
+    color: #fff;
+    font-size: 11px;
+    line-height: 22px;
+    text-indent: 300px;
+  }*/
+
+.element .element-header input:focus + * { display: none; }
+  .element .element-header input:focus {
+    color: #858585;
+    text-align: left;
+    text-indent: 0;
+    padding: 0 11px 0 22px;
+    width: 100%;
+  }
+
+  .element .element-header .tt-input:focus + * { display: none; }
+  .element .element-header .tt-input:focus {
+    color: #858585;
+    text-align: left;
+    text-indent: 0;
+    padding: 0 11px 0 22px;
+    width: 100%;
+  }
+
+  .element-header .twitter-typeahead{
+      float:right;
+  }
